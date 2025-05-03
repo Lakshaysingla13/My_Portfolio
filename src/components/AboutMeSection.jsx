@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import profileImg from '../assets/profile.jpg';
 function AboutMeSection() {
     return (
       <section
@@ -23,7 +24,7 @@ function AboutMeSection() {
             {/* Profile Image */}
             <div className="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden bg-gray-800 shadow-lg flex-shrink-0">
               <img
-                src="/src/assets/profile.jpg"
+                src={profileImg}
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
