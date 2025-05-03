@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Typing from "react-typing-effect";
+import animatedImg from "/src/assets/front_image.png";
 
 function HeroSection() {
   return (
@@ -85,7 +86,7 @@ function HeroSection() {
           whileHover={{ scale: 1.05 }}
         >
           <motion.img
-            src="/src/assets/front_image.png"
+            src={animatedImg}
             alt="Hero Illustration"
             className="w-4/5 md:w-full max-w-sm md:max-w-md"
             animate={{ y: [-5, 5, -5] }}
